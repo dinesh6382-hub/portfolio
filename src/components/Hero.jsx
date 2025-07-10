@@ -22,7 +22,7 @@ const Hero = () => {
         </div>
         <div className="mt-28 md:mt-5 lg:5">
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#ff9500]'>vishnu K</span>
+            Hi, I'm <span className='text-[#ff9500]'>DINESH K</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             UI/UX Designer | Graphics Designer | Video Editer. <br />
@@ -39,7 +39,7 @@ const Hero = () => {
       </div>
 
       {/* <ComputersCanvas /> */}
-      <div className='absolute top-[750px] lg:top-[1100px] w-full flex justify-center items-center'>
+      <div className='absolute top-[850px] lg:top-[1100px] w-full flex justify-center items-center'>
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-1'>
             <motion.div
