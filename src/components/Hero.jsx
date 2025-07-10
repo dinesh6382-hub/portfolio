@@ -28,7 +28,7 @@ const Hero = () => {
             UI/UX Designer | Graphics Designer | Video Editer. <br />
             I create user interfaces design, brand identities and logos, and edit engaging reels.
           </p>
-          <div className="lg:-mt-20 flex justify-center -bottom-10 ">
+          <div className="lg:-mt-20 flex justify-center -bottom-0 ">
             <img
               className="w-[900px] md:w-[900px] lg:w-[900px] h-auto object-contain rounded-xl shadow-lg"
               src={dinesh_img}
@@ -39,9 +39,9 @@ const Hero = () => {
       </div>
 
       {/* <ComputersCanvas /> */}
-      <div className='absolute xs:-bottom-40 lg:-bottom-80 w-full flex justify-center items-center'>
+      <div className='absolute top-[850px] lg:top-[1100px] w-full flex justify-center items-center'>
         <a href='#about'>
-          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
+          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-1'>
             <motion.div
               animate={{ y: [0, 24, 0] }}
               transition={{ duration: 1.5, repeat: Infinity, repeatType: "loop" }}

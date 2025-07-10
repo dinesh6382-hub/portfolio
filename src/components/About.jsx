@@ -72,7 +72,7 @@ const About = () => {
 
   return (
     <>
-      <div ref={headingRef} className=" xs:mt-40 lg:mt-80" >
+      <div ref={headingRef} className="lg:mt-80" >
         <p className={styles.sectionSubText}>Get To</p>
         <h2 className={styles.sectionHeadText}>About Me</h2>
       </div>
