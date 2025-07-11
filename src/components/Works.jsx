@@ -135,8 +135,8 @@ const Works = () => {
   }, []);
 
   return (
-    < >
-      <section id="work">
+    <>
+      <section id="work" className="-mt-10">
         <div >
           <p className={`${styles.sectionSubText}`}>My work</p>
           <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
@@ -158,7 +158,7 @@ const Works = () => {
           ))}
         </div>
         <div className=" xs:mt-2 lg:mt-1" >
-          <h2 className={`${styles.projectSubText} p-5 mt-10`} >Graphics Design (Freelancing Posters)</h2>
+          <h2 className={`${styles.projectSubText} p-5 mt-10`} >Graphics Design (Social Media Posters)</h2>
         </div>
         <div className="works-container mt-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-5 gap-x-20">
           {graphic.map((content, i) => (
@@ -166,7 +166,7 @@ const Works = () => {
               key={`graphic-${i}`}
               className="bg-tertiary p-4 rounded-2xl sm:w-[340px] flex flex-col items-center shadow-lg"
             >
-              <div className="w-full h-[430px] sm:h-[340px] flex items-center justify-center mb-4">
+              <div  className="w-full h-[430px] sm:h-[340px] flex items-center justify-center mb-4">
                 <img
                   src={content.image}
                   alt={content.name}
