@@ -47,7 +47,7 @@ const Tech = () => {
             </div>
           ))}
         </div>
-        <div className=" xs:mt-2 lg:mt-20" id="skills" >
+        <div className="mt-20 lg:mt-20" id="skills" >
           <h2 className={`${styles.sectionHeadText} p-5`} > Skills</h2>
           <div className="">
             <div className=" xs:-mt-2 lg:-mt-8" >
