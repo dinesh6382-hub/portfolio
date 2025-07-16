@@ -6,8 +6,7 @@ import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects, graphic } from "../constants";
-import { p } from "maath/dist/misc-7d870b3c.esm";
-
+import { motion } from "framer-motion";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -47,6 +46,7 @@ const ProjectCard = ({
     );
   }, []);
 
+
   return (
     <div ref={cardRef} >
       <Tilt
@@ -72,7 +72,7 @@ const ProjectCard = ({
                 className="bg-blue-600 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
                 title="Live Demo"
               >
-                <span className="text-white text-xs font-bold">Live</span>
+                <span className="text-white text-xs font-bold">Link</span>
               </div>
             )}
 
@@ -97,7 +97,7 @@ const ProjectCard = ({
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
         </div>
 
-        <div className="mt-4 flex flex-wrap gap-2">
+        <div className="mt-4 flex flex-wrap gap-2 card-img_hover " ref={cardRef}>
           {tags.map((tag) => (
             <p key={`${name}-${tag.name}`} className={`text-[14px] ${tag.color}`}>
               #{tag.name}
@@ -148,7 +148,7 @@ const Works = () => {
           </p>
         </div>
         <div className=" xs:mt-2 lg:mt-1" >
-          <h2 className={`${styles.projectSubText} p-5 mt-10`} >UI/UX ...</h2>
+          <h2 className={`${styles.projectSubText} p-5 mt-10`} >UI/UX</h2>
         </div>
         <div className="works-container mt-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-10">
           {projects.map((project, index) => (
@@ -158,24 +158,34 @@ const Works = () => {
           ))}
         </div>
         <div className=" xs:mt-2 lg:mt-1" >
-          <h2 className={`${styles.projectSubText} p-5 mt-10`} >Graphics Design (Social Media Posters)</h2>
+          <h2 className={`${styles.projectSubText} p-5 mt-10`}>Graphics Design <span className="text-[#ff9500]">(Social Media Posters)</span></h2>
         </div>
         <div className="works-container mt-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-5 gap-x-20">
           {graphic.map((content, i) => (
-            <div
+            <motion.div
               key={`graphic-${i}`}
-              className="bg-tertiary p-4 rounded-2xl sm:w-[340px] flex flex-col items-center shadow-lg"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              whileHover={{
+                scale: 1.06,
+                y: -10,
+                boxShadow: "0 8px 42px 0 rgba(80,80,180,0.25)",
+                transition: { type: "spring", stiffness: 300, damping: 20 }
+              }}
+              transition={{ duration: 0.6, delay: i * 0.15 }}
+              viewport={{ once: true }}
+              className="bg-tertiary p-4 rounded-2xl sm:w-[340px] flex flex-col items-center shadow-lg cursor-pointer"
             >
-              <div  className="w-full h-[430px] sm:h-[340px] flex items-center justify-center mb-4">
+              <div className="w-full h-[430px] sm:h-[340px] flex items-center justify-center mb-4">
                 <img
                   src={content.image}
                   alt={content.name}
-                  className="w-full object-cover rounded-2xl cursor-pointer"
+                  className="w-full object-cover rounded-2xl"
                   onClick={() => window.open(content.image)}
                 />
               </div>
               <h3 className="text-white font-bold text-[20px] text-center">{content.name}</h3>
-            </div>
+            </motion.div>
           ))}
         </div>
       </section>

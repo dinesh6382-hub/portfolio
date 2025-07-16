@@ -36,6 +36,7 @@ import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
+import canva from "./tech/canva.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import threejs from "./tech/threejs.svg";
@@ -62,6 +63,7 @@ export {
   wireframe,
   miro,
   photoshop,
+  canva,
   illustrator,
   premiere_pro,
   Bootstrap_logo,

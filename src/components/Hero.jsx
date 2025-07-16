@@ -1,16 +1,10 @@
-import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { dinesh_img } from "../assets";
-// import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
 
-  // useEffect(() => {
-  //   const message = "Hi, I'm Dinesh. designer.";
-  //   const utterance = new window.SpeechSynthesisUtterance(message);
-  //   window.speechSynthesis.speak(utterance);
-  // }, []);
+
 
   return (
     // ...existing code...
@@ -25,8 +19,8 @@ const Hero = () => {
             Hi, I'm <span className='text-[#ff9500]'>DINESH K</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            UI/UX Designer | Graphics Designer | Video Editer. <br />
-            I create user interfaces design, brand identities and logos, and edit engaging reels.
+            <span className='text-[#ff9500] text-600 '> UI/UX Designer | Graphics Designer | Video Editer.</span> <br />
+            <span className="text-[#a0a4ba]" > I create user interfaces design, brand identities and logos, and edit engaging reels.</span>
           </p>
           <div className="lg:-mt-20 flex justify-center -bottom-0 ">
             <img
@@ -36,19 +30,6 @@ const Hero = () => {
             />
           </div>
         </div>
-      </div>
-
-      {/* <ComputersCanvas /> */}
-      <div className='absolute top-[790px] md:top-[900] lg:top-[1100px] w-full flex justify-center items-center'>
-        <a href='#about'>
-          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-1'>
-            <motion.div
-              animate={{ y: [0, 24, 0] }}
-              transition={{ duration: 1.5, repeat: Infinity, repeatType: "loop" }}
-              className='w-3 h-3 rounded-full bg-secondary mb-1'
-            />
-          </div>
-        </a>
       </div>
     </section>
 

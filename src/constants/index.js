@@ -10,6 +10,7 @@ import {
   project5,
   project6,
   project7,
+  canva,
   adobe,
   figma,
   framer,
@@ -31,7 +32,6 @@ import {
   image7,
   image8,
   image9,
-
 } from "../assets";
 
 export const navLinks = [
@@ -43,27 +43,26 @@ export const navLinks = [
 
 const services = [
   { title: "UI/UX Designer", icon: web },
+  { title: "Web Designer", icon: backend },
   { title: "Graphics Designer", icon: mobile },
-  { title: "Video Editer", icon: backend },
-  { title: "Frontend Developer", icon: creator },
+  { title: "Video Developer", icon: creator },
 ];
 
 const technologies = [
-
-
-  { name: "figma", icon: figma, percentage: 70 },
-  { name: "adobe", icon: adobe, percentage: 70 },
-  { name: "framer", icon: framer, percentage: 70 },
-  { name: "wireframe CC", icon: wireframe, percentage: 70 },
-  { name: "miro", icon: miro, percentage: 70 },
-  { name: "photoshop", icon: photoshop, percentage: 70 },
-  { name: "illustrator", icon: illustrator, percentage: 70 },
-  { name: "premiere_pro", icon: premiere_pro, percentage: 70 },
-  { name: "HTML 5", icon: html, percentage: 94 },
-  { name: "CSS 3", icon: css, percentage: 84 },
-  { name: "JavaScript", icon: javascript, percentage: 76 },
-  { name: "Bootstrap_logo", icon: Bootstrap_logo, percentage: 84 },
-  { name: "git", icon: git, percentage: 82 },
+  { name: "figma", icon: figma },
+  { name: "adobe", icon: adobe },
+  { name: "framer", icon: framer },
+  { name: "wireframe CC", icon: wireframe },
+  { name: "miro", icon: miro },
+  { name: "photoshop", icon: photoshop },
+  { name: "illustrator", icon: illustrator },
+  { name: "canva", icon: canva },
+  { name: "premiere_pro", icon: premiere_pro },
+  { name: "HTML 5", icon: html },
+  { name: "CSS 3", icon: css },
+  { name: "JavaScript", icon: javascript },
+  { name: "Bootstrap_logo", icon: Bootstrap_logo },
+  { name: "git", icon: git },
 ];
 
 const projects = [
@@ -76,7 +75,7 @@ const projects = [
       { name: "Adobe XD", color: "white-text-gradient" },
       { name: "Photoshop", color: "pink-text-gradient" },
       { name: "WireframeCC", color: "green-text-gradient" },
-      { name: "Miro", color: "orange-text-gradient" }, 
+      { name: "Miro", color: "orange-text-gradient" },
     ],
     image: project1,
     live_link:
@@ -157,19 +156,19 @@ const graphic = [
     name: "International Medical graduates",
     image: image1,
   },
-   {
+  {
     name: "Resume Verified Profile App Promote",
     image: image2,
   },
-   {
+  {
     name: "Degital Admission Poster",
     image: image3,
   },
-   {
+  {
     name: "Build Your Brand",
     image: image4,
   },
-   {
+  {
     name: "Aafiya Hotel Promote",
     image: image5,
   },

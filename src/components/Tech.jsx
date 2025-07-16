@@ -51,7 +51,7 @@ const Tech = () => {
           <h2 className={`${styles.sectionHeadText} p-5`} > Skills</h2>
           <div className="">
             <div className=" xs:-mt-2 lg:-mt-8" >
-              <h2 className={`${styles.projectSubText}  p-5`} >UI/UX ...</h2>
+              <h2 className={`${styles.projectSubText}  p-5`} >UI/UX</h2>
             </div>
             <p className="mx-10 text-[17px] text-[#d1d2f3cf] -mt-3 lg:leading-[28px]" >
               User Experience Design,
@@ -69,35 +69,35 @@ const Tech = () => {
           </div>
           <div className="">
             <div className=" xs:mt-10 lg:mt-2" >
-              <h2 className={`${styles.projectSubText}  p-5`} >Graphic Design ...</h2>
+              <h2 className={`${styles.projectSubText}  p-5`} >Graphic Design</h2>
             </div>
             <p className="mx-10 text-[17px] text-[#d1d2f3cf] -mt-3 lg:leading-[28px]" >
-             Poster Design,
+              Poster Design,
               Banner Design,
               Logo,
-              Thumbnail Design, 
-               Branding Knowledge,
+              Thumbnail Design,
+              Branding Knowledge,
               Mockups,
               Creativity,
               Typography,
               Color Theory,
-               Layout & Composition, 
-                Time Management.
+              Layout & Composition,
+              Time Management.
             </p>
           </div>
-           <div className="">
+          <div className="">
             <div className=" xs:mt-10 lg:mt-2" >
-              <h2 className={`${styles.projectSubText}  p-5`} >Video Editing ...</h2>
+              <h2 className={`${styles.projectSubText}  p-5`} >Video Editing</h2>
             </div>
             <p className="mx-10 text-[17px] text-[#d1d2f3cf] -mt-3 lg:leading-[28px]" >
-             Video Editing Basics,
+              Video Editing Basics,
               Timeline Management,
-               Transitions & Effects,
-                Color Correction & Grading,
-                 Masking, Audio Editing, 
-                 Text & Titles,
-                  Keyframing & Animation,
-                   Youtube Video Edit.
+              Transitions & Effects,
+              Color Correction & Grading,
+              Masking, Audio Editing,
+              Text & Titles,
+              Keyframing & Animation,
+              Youtube Video Edit.
             </p>
           </div>
         </div>
