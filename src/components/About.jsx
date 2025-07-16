@@ -72,7 +72,7 @@ const About = () => {
 
   return (
     <>
-      <div ref={headingRef} className=" -mt-20 lg:mt-40" >
+      <div ref={headingRef} className=" -mt-10 lg:mt-60" >
         <p className={styles.sectionSubText}>Get To</p>
         <h2 className={styles.sectionHeadText}>About Me</h2>
       </div>
@@ -81,12 +81,7 @@ const About = () => {
         ref={paragraphRef}
         className="mt-4 text-secondary text-[17px] max-w-1xl leading-[30px]"
       >
-        I am a Junior UI/UX Designer and Graphic Designer with 1 year of experience at Macs
-        Info Solution in Erode. I have worked on creating user-friendly designs for websites
-        and mobile apps, as well as designing posters, banners, and social media creatives. I
-        enjoy using tools like Figma, Photoshop, and Illustrator to bring ideas to life. I’m
-        passionate about solving design problems and always eager to learn and grow in the
-        design field.
+        I am a Junior UI/UX Designer and Graphic Designer. I have experience creating user-friendly designs for websites and mobile apps, as well as designing posters, banners, and social media creatives. I enjoy using tools like Figma, Photoshop, and Illustrator to bring ideas to life. I’m passionate about solving design problems and always eager to learn and grow in the design field.
       </p>
 
       <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 justify-items-center">
